@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/UserRoleSelector.css">
+</head>
+<body>
+	<button id="showSelector">配置用户角色</button>
+	<script src="assets/js/UserRoleSelector.js"></script>
+	<script>
+		window.onload = function() {
+			//通过构造器传入参数，构建UserRoleSelector的实例
+			var selector = new UserRoleSelector({
+				show : false ,//默认不显示
+				onLogin : function(){
+					alert("登录成功了") //do code
+					this.hide();
+				}
+			});
+			document.getElementById("showSelector").onclick = function () {
+				if(selector.status) {
+					selector.hide();//让组件隐藏
+				}else {
+					selector.show();//让组件出现
+				}
+			}
+		}
+	</script>
+</body>
+</html>

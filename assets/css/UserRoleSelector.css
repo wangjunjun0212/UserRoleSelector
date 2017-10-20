@@ -1,0 +1,44 @@
+.mask {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+}
+.user-role-selector {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 4px;
+	font-size: 12px;
+	color: red;
+	background-color: #85FEDE;
+}
+.login {
+	padding: 4px 16px;
+	color: #FBE6A2;
+	background: #2BB3C0;
+	border-radius: 5px;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width: 400px;
+	margin-left: -200px;
+	margin-top: -100px;
+	color: #F2AE72;
+	text-align: center;
+	border: 1px solid #E3F8FF;
+	border-radius: 5px;
+	background: #FFFEEC;
+}
+
